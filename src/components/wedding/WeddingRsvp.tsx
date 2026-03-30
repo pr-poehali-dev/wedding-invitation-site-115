@@ -29,11 +29,11 @@ export default function WeddingRsvp() {
         {submitted ? (
           <div
             className="text-center p-12 rounded-3xl"
-            style={{ background: "var(--c-card)", border: "1px solid rgba(230,170,80,0.3)" }}
+            style={{ background: "var(--c-card)", border: "1px solid rgba(17,17,17,0.15)" }}
           >
             <div
               className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6"
-              style={{ background: "linear-gradient(135deg, var(--c-coral), var(--c-gold))" }}
+              style={{ background: "#111111" }}
             >
               <Icon name="Heart" size={36} style={{ color: "#fff" }} />
             </div>
@@ -48,7 +48,7 @@ export default function WeddingRsvp() {
           <form
             onSubmit={handleSubmit}
             className="p-8 md:p-12 rounded-3xl space-y-6"
-            style={{ background: "var(--c-card)", border: "1px solid rgba(230,170,80,0.15)" }}
+            style={{ background: "var(--c-card)", border: "1px solid rgba(17,17,17,0.1)" }}
           >
             <div className="space-y-2">
               <label className="font-montserrat text-xs uppercase tracking-widest block" style={{ color: "var(--c-gold)" }}>
@@ -60,9 +60,9 @@ export default function WeddingRsvp() {
                 onChange={e => setForm({ ...form, name: e.target.value })}
                 placeholder="Иванов Иван Иванович"
                 className="w-full px-5 py-4 rounded-xl font-montserrat text-sm outline-none transition-all duration-200"
-                style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(230,170,80,0.2)", color: "var(--c-text)" }}
-                onFocus={e => (e.target as HTMLInputElement).style.borderColor = "var(--c-gold)"}
-                onBlur={e => (e.target as HTMLInputElement).style.borderColor = "rgba(230,170,80,0.2)"}
+                style={{ background: "#FAFAFA", border: "1px solid rgba(17,17,17,0.15)", color: "var(--c-text)" }}
+                onFocus={e => (e.target as HTMLInputElement).style.borderColor = "#111111"}
+                onBlur={e => (e.target as HTMLInputElement).style.borderColor = "rgba(17,17,17,0.15)"}
               />
             </div>
 
@@ -78,9 +78,9 @@ export default function WeddingRsvp() {
                     onClick={() => setForm({ ...form, attending: opt })}
                     className="py-4 px-4 rounded-xl font-montserrat text-sm transition-all duration-200"
                     style={{
-                      border: form.attending === opt ? "1px solid var(--c-gold)" : "1px solid rgba(230,170,80,0.2)",
-                      background: form.attending === opt ? "linear-gradient(135deg, rgba(230,90,60,0.2), rgba(230,170,80,0.2))" : "rgba(255,255,255,0.03)",
-                      color: form.attending === opt ? "var(--c-gold)" : "var(--c-muted)",
+                      border: form.attending === opt ? "1px solid #111111" : "1px solid rgba(17,17,17,0.15)",
+                      background: form.attending === opt ? "#111111" : "rgba(17,17,17,0.03)",
+                      color: form.attending === opt ? "#ffffff" : "var(--c-muted)",
                     }}
                   >
                     {opt}
@@ -101,9 +101,9 @@ export default function WeddingRsvp() {
                     onClick={() => setForm({ ...form, drink })}
                     className="py-3 px-3 rounded-xl font-montserrat text-xs transition-all duration-200"
                     style={{
-                      border: form.drink === drink ? "1px solid var(--c-gold)" : "1px solid rgba(230,170,80,0.2)",
-                      background: form.drink === drink ? "linear-gradient(135deg, rgba(230,90,60,0.2), rgba(230,170,80,0.2))" : "rgba(255,255,255,0.03)",
-                      color: form.drink === drink ? "var(--c-gold)" : "var(--c-muted)",
+                      border: form.drink === drink ? "1px solid #111111" : "1px solid rgba(17,17,17,0.15)",
+                      background: form.drink === drink ? "#111111" : "rgba(17,17,17,0.03)",
+                      color: form.drink === drink ? "#ffffff" : "var(--c-muted)",
                     }}
                   >
                     {drink}
@@ -122,16 +122,16 @@ export default function WeddingRsvp() {
                 placeholder="Ваше тёплое пожелание..."
                 rows={3}
                 className="w-full px-5 py-4 rounded-xl font-montserrat text-sm outline-none transition-all duration-200 resize-none"
-                style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(230,170,80,0.2)", color: "var(--c-text)" }}
-                onFocus={e => (e.target as HTMLTextAreaElement).style.borderColor = "var(--c-gold)"}
-                onBlur={e => (e.target as HTMLTextAreaElement).style.borderColor = "rgba(230,170,80,0.2)"}
+                style={{ background: "#FAFAFA", border: "1px solid rgba(17,17,17,0.15)", color: "var(--c-text)" }}
+                onFocus={e => (e.target as HTMLTextAreaElement).style.borderColor = "#111111"}
+                onBlur={e => (e.target as HTMLTextAreaElement).style.borderColor = "rgba(17,17,17,0.15)"}
               />
             </div>
 
             <button
               type="submit"
               className="w-full py-5 font-montserrat text-sm uppercase tracking-widest transition-all duration-300 hover:scale-105"
-              style={{ background: "linear-gradient(135deg, var(--c-coral), var(--c-gold))", color: "#fff", borderRadius: 12, boxShadow: "0 8px 32px rgba(230,90,60,0.35)" }}
+              style={{ background: "#111111", color: "#ffffff", borderRadius: 12, boxShadow: "0 8px 32px rgba(17,17,17,0.2)" }}
             >
               Отправить анкету
             </button>
