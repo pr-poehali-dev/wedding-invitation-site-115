@@ -117,7 +117,7 @@ export default function Index() {
     <div style={{ fontFamily: "'Montserrat', sans-serif", background: "var(--c-bg)", color: "var(--c-text)", minHeight: "100vh" }}>
 
       {/* NAV */}
-      <nav style={{ background: "rgba(15,10,5,0.85)", backdropFilter: "blur(16px)", borderBottom: "1px solid rgba(230,170,80,0.15)" }}
+      <nav style={{ background: "rgba(253,248,243,0.92)", backdropFilter: "blur(16px)", borderBottom: "1px solid rgba(184,131,42,0.2)" }}
         className="fixed top-0 left-0 right-0 z-50">
         <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-14">
           <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -128,7 +128,7 @@ export default function Index() {
             {navLinks.map(l => (
               <button key={l.id} onClick={() => scrollTo(l.id)}
                 className="font-montserrat text-xs uppercase tracking-widest transition-colors duration-200"
-                style={{ color: activeNav === l.id ? "var(--c-gold)" : "rgba(255,255,255,0.7)" }}>
+                style={{ color: activeNav === l.id ? "var(--c-gold)" : "var(--c-muted)" }}>
                 {l.label}
               </button>
             ))}
@@ -138,11 +138,11 @@ export default function Index() {
           </button>
         </div>
         {menuOpen && (
-          <div className="md:hidden px-4 pb-4 flex flex-col gap-3" style={{ background: "rgba(15,10,5,0.95)" }}>
+          <div className="md:hidden px-4 pb-4 flex flex-col gap-3" style={{ background: "rgba(253,248,243,0.98)" }}>
             {navLinks.map(l => (
               <button key={l.id} onClick={() => scrollTo(l.id)}
                 className="text-left font-montserrat text-xs uppercase tracking-widest py-2"
-                style={{ color: "rgba(255,255,255,0.8)" }}>
+                style={{ color: "var(--c-text)" }}>
                 {l.label}
               </button>
             ))}
@@ -155,7 +155,7 @@ export default function Index() {
         <div className="absolute inset-0 z-0">
           <img src="https://cdn.poehali.dev/projects/0a84e299-6d88-4d4e-87c5-8107f3b0b207/files/8d07f19d-a757-41e0-822d-f5e99f1ed8c5.jpg"
             alt="Wedding" className="w-full h-full object-cover" style={{ filter: "brightness(0.45)" }} />
-          <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(15,10,5,0.3) 0%, rgba(15,10,5,0.6) 60%, rgba(15,10,5,1) 100%)" }} />
+          <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(253,248,243,0.15) 0%, rgba(253,248,243,0.45) 60%, rgba(253,248,243,1) 100%)" }} />
         </div>
 
         {[...Array(10)].map((_, i) => (
@@ -173,7 +173,7 @@ export default function Index() {
           <p className="font-montserrat text-xs uppercase tracking-[0.4em] mb-6" style={{ color: "var(--c-gold)", opacity: 0.9 }}>
             Вы приглашены на свадьбу
           </p>
-          <h1 className="font-cormorant italic leading-none mb-4" style={{ fontSize: "clamp(3.5rem, 10vw, 8rem)", color: "#fff" }}>
+          <h1 className="font-cormorant italic leading-none mb-4" style={{ fontSize: "clamp(3.5rem, 10vw, 8rem)", color: "var(--c-text)" }}>
             Дмитрий<br />
             <span style={{ color: "var(--c-gold)" }}>&</span><br />
             Елена
@@ -201,7 +201,7 @@ export default function Index() {
         </div>
 
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
-          <Icon name="ChevronDown" size={28} style={{ color: "rgba(255,255,255,0.5)" }} />
+          <Icon name="ChevronDown" size={28} style={{ color: "var(--c-muted)" }} />
         </div>
       </section>
 
@@ -225,7 +225,7 @@ export default function Index() {
               </p>
             </div>
             <div className="relative">
-              <div className="aspect-[3/4] rounded-3xl overflow-hidden" style={{ boxShadow: "0 24px 80px rgba(0,0,0,0.4)" }}>
+              <div className="aspect-[3/4] rounded-3xl overflow-hidden" style={{ boxShadow: "0 24px 80px rgba(44,24,16,0.15)" }}>
                 <img src="https://cdn.poehali.dev/projects/0a84e299-6d88-4d4e-87c5-8107f3b0b207/files/8d07f19d-a757-41e0-822d-f5e99f1ed8c5.jpg"
                   alt="Пара" className="w-full h-full object-cover" />
               </div>
@@ -260,7 +260,7 @@ export default function Index() {
                 <div key={i} className={`flex items-center gap-6 md:gap-12 ${i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}>
                   <div className={`flex-1 ${i % 2 === 0 ? "md:text-right" : "md:text-left"}`}>
                     <div className="inline-block px-6 py-5 rounded-2xl transition-transform duration-300 hover:scale-105"
-                      style={{ background: "var(--c-card)", border: "1px solid rgba(230,170,80,0.15)", boxShadow: "0 8px 32px rgba(0,0,0,0.2)" }}>
+                      style={{ background: "var(--c-card)", border: "1px solid rgba(184,131,42,0.2)", boxShadow: "0 8px 32px rgba(44,24,16,0.08)" }}>
                       <p className="font-montserrat text-xs uppercase tracking-widest mb-1" style={{ color: "var(--c-coral)" }}>{item.time}</p>
                       <h3 className="font-cormorant text-2xl mb-1" style={{ color: "var(--c-text)" }}>{item.title}</h3>
                       <p className="font-montserrat text-sm" style={{ color: "var(--c-muted)" }}>{item.desc}</p>
@@ -513,12 +513,12 @@ export default function Index() {
 
       <style>{`
         :root {
-          --c-bg: #0F0A05;
-          --c-card: #1A1208;
-          --c-text: #F5EDD8;
-          --c-muted: rgba(245,237,216,0.55);
-          --c-gold: #E6AA50;
-          --c-coral: #E65A3C;
+          --c-bg: #FDF8F3;
+          --c-card: #FFFFFF;
+          --c-text: #2C1810;
+          --c-muted: rgba(44,24,16,0.5);
+          --c-gold: #B8832A;
+          --c-coral: #C94F30;
         }
         .font-cormorant { font-family: 'Cormorant Garamond', serif; }
         .font-montserrat { font-family: 'Montserrat', sans-serif; }
@@ -532,9 +532,9 @@ export default function Index() {
         }
         .animate-fade-in { animation: fade-in 1.2s ease both; }
         html { scroll-behavior: smooth; }
-        input::placeholder, textarea::placeholder { color: rgba(245,237,216,0.3); }
+        input::placeholder, textarea::placeholder { color: rgba(44,24,16,0.3); }
         ::-webkit-scrollbar { width: 4px; }
-        ::-webkit-scrollbar-track { background: #0F0A05; }
+        ::-webkit-scrollbar-track { background: #FDF8F3; }
         ::-webkit-scrollbar-thumb { background: var(--c-gold); border-radius: 2px; }
       `}</style>
     </div>
