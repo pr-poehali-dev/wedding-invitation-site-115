@@ -9,7 +9,7 @@ export const PROGRAM = [
   { time: "10:00", icon: "Heart", title: "Церемония", desc: "Торжественная регистрация брака" },
   { time: "14:00", icon: "UtensilsCrossed", title: "Банкет", desc: "Праздничный ужин и тосты" },
 
-  { time: "23:00", icon: "Sparkles", title: "Фейерверк", desc: "Огненное шоу в финале вечера" },
+  { time: "00:00", icon: "Sparkles", title: "Завершение вечера", desc: "Огненное шоу в финале вечера" },
 ];
 
 export const DRESS_CODES = [
