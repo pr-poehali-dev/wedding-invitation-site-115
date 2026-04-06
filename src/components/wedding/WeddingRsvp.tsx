@@ -94,7 +94,7 @@ export default function WeddingRsvp() {
                 Что будете пить?
               </label>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                {["Шампанское", "Вино красное", "Вино белое", "Сок / вода", "Виски / коньяк", "Не пью алкоголь"].map(drink => (
+                {["Шампанское", "Вино красное", "Вино белое", "Сок / вода", "Самогончик", "Не пью алкоголь"].map(drink => (
                   <button
                     key={drink}
                     type="button"
