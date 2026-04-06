@@ -7,7 +7,7 @@ export const PHOTO_URL =
 
 export const PROGRAM = [
   { time: "10:00", icon: "Heart", title: "Церемония", desc: "Торжественная регистрация брака" },
-  { time: "15:30", icon: "Camera", title: "Фотосессия", desc: "Прогулка и памятные снимки" },
+  { time: "14:00", icon: "UtensilsCrossed", title: "Банкет", desc: "Праздничный ужин и тосты" },
   { time: "17:00", icon: "UtensilsCrossed", title: "Банкет", desc: "Праздничный ужин и тосты" },
   { time: "19:00", icon: "Music", title: "Танцы", desc: "Живая музыка и дискотека" },
   { time: "23:00", icon: "Sparkles", title: "Фейерверк", desc: "Огненное шоу в финале вечера" },
