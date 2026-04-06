@@ -238,7 +238,7 @@ export default function WeddingContent() {
           <h2 className="font-cormorant italic text-5xl md:text-6xl mb-12" style={{ color: "var(--c-text)" }}>Контакты</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { icon: "Phone", title: "Дмитрий", value: "+7 (999) 000-00-00", href: "tel:+79990000000" },
+              { icon: "Phone", title: "Дмитрий", value: "+7 (951) 943-10-17", href: "tel:+79519431017" },
               { icon: "Phone", title: "Елена", value: "+7 (999) 000-00-01", href: "tel:+79990000001" },
               { icon: "MessageCircle", title: "Telegram / WhatsApp", value: "@wedding_de26", href: "https://t.me/" },
             ].map((c, i) => (
