@@ -137,15 +137,7 @@ export default function WeddingContent() {
                 Открыть на карте
               </a>
             </div>
-            <div
-              className="rounded-3xl overflow-hidden flex items-center justify-center"
-              style={{ background: "var(--c-card)", border: "1px solid rgba(230,170,80,0.15)", minHeight: 280 }}
-            >
-              <div className="text-center p-8">
-                <Icon name="Map" size={48} style={{ color: "var(--c-gold)", opacity: 0.4 }} />
-                <p className="font-montserrat text-sm mt-4" style={{ color: "var(--c-muted)" }}>Карта будет добавлена позже</p>
-              </div>
-            </div>
+
           </div>
         </Section>
       </section>
