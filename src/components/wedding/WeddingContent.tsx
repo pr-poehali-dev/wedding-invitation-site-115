@@ -111,26 +111,23 @@ export default function WeddingContent() {
                   <Icon name="MapPin" size={22} style={{ color: "#fff" }} />
                 </div>
                 <div>
-                  <h3 className="font-cormorant text-2xl mb-1" style={{ color: "var(--c-text)" }}>Ресторан «Дворянское гнездо»</h3>
-                  <p className="font-montserrat text-sm" style={{ color: "var(--c-muted)" }}>г. Москва, ул. Тверская, 15</p>
+                  <h3 className="font-cormorant text-2xl mb-1" style={{ color: "var(--c-text)" }}>База отдыха «Зеленино»</h3>
+                  <p className="font-montserrat text-xs mb-0.5" style={{ color: "var(--c-gold)" }}>Беседка «Белый лофт»</p>
+                  <p className="font-montserrat text-sm" style={{ color: "var(--c-muted)" }}>г. Пермь, Апрельская ул., 51</p>
                 </div>
               </div>
               <div className="space-y-4 mb-6">
                 <div className="flex items-center gap-3">
                   <Icon name="Clock" size={16} style={{ color: "var(--c-gold)" }} />
-                  <span className="font-montserrat text-sm" style={{ color: "var(--c-muted)" }}>Начало в 14:00</span>
+                  <span className="font-montserrat text-sm" style={{ color: "var(--c-muted)" }}>Начало в 10:00</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Icon name="Car" size={16} style={{ color: "var(--c-gold)" }} />
                   <span className="font-montserrat text-sm" style={{ color: "var(--c-muted)" }}>Парковка для гостей — бесплатно</span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <Icon name="Train" size={16} style={{ color: "var(--c-gold)" }} />
-                  <span className="font-montserrat text-sm" style={{ color: "var(--c-muted)" }}>Метро: Тверская, 5 мин. пешком</span>
-                </div>
               </div>
               <a
-                href="https://maps.yandex.ru"
+                href="https://yandex.ru/maps/org/zelenino/174411448212/?ll=56.369374%2C57.963178&z=16.71"
                 target="_blank"
                 rel="noopener"
                 className="flex items-center justify-center gap-2 py-3 px-6 rounded-xl font-montserrat text-sm uppercase tracking-wider transition-all duration-300 hover:scale-105"
