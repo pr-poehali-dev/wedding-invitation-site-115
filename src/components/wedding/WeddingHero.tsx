@@ -41,9 +41,7 @@ export default function WeddingHero() {
       ))}
 
       <div className="relative z-10 text-center px-4 animate-fade-in">
-        <p className="font-montserrat text-xs uppercase tracking-[0.4em] mb-6" style={{ color: "var(--c-gold)", opacity: 0.9 }}>
-          Вы приглашены на свадьбу
-        </p>
+
         <h1
           className="font-cormorant italic leading-none mb-4"
           style={{ fontSize: "clamp(3.5rem, 10vw, 8rem)", color: "var(--c-text)" }}
