@@ -239,7 +239,7 @@ export default function WeddingContent() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { icon: "Phone", title: "Дмитрий", value: "+7 (951) 943-10-17", href: "tel:+79519431017" },
-              { icon: "Phone", title: "Елена", value: "+7 (999) 000-00-01", href: "tel:+79990000001" },
+              { icon: "Phone", title: "Елена", value: "+7 (952) 338-28-08", href: "tel:+79523382808" },
               { icon: "MessageCircle", title: "Telegram / WhatsApp", value: "@wedding_de26", href: "https://t.me/" },
             ].map((c, i) => (
               <a
