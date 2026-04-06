@@ -119,7 +119,7 @@ export default function WeddingContent() {
               <div className="space-y-4 mb-6">
                 <div className="flex items-center gap-3">
                   <Icon name="Clock" size={16} style={{ color: "var(--c-gold)" }} />
-                  <span className="font-montserrat text-sm" style={{ color: "var(--c-muted)" }}>Начало в 10:00</span>
+                  <span className="font-montserrat text-sm" style={{ color: "var(--c-muted)" }}>Начало в 14:00</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Icon name="Car" size={16} style={{ color: "var(--c-gold)" }} />
