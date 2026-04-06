@@ -23,7 +23,7 @@ export default function WeddingNav() {
 
   return (
     <nav
-      style={{ background: "rgba(237,232,223,0.92)", backdropFilter: "blur(16px)", borderBottom: "1px solid rgba(17,17,17,0.1)" }}
+      style={{ background: "rgba(253,248,243,0.92)", backdropFilter: "blur(16px)", borderBottom: "1px solid rgba(184,131,42,0.2)" }}
       className="fixed top-0 left-0 right-0 z-50"
     >
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-14">
@@ -51,7 +51,7 @@ export default function WeddingNav() {
         </button>
       </div>
       {menuOpen && (
-        <div className="md:hidden px-4 pb-4 flex flex-col gap-3" style={{ background: "rgba(237,232,223,0.98)" }}>
+        <div className="md:hidden px-4 pb-4 flex flex-col gap-3" style={{ background: "rgba(253,248,243,0.98)" }}>
           {NAV_LINKS.map(l => (
             <button
               key={l.id}

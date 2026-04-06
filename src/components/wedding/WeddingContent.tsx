@@ -29,13 +29,13 @@ export default function WeddingContent() {
             <div className="relative">
               <div
                 className="aspect-[3/4] rounded-3xl overflow-hidden"
-                style={{ boxShadow: "0 24px 80px rgba(17,17,17,0.12)" }}
+                style={{ boxShadow: "0 24px 80px rgba(44,24,16,0.15)" }}
               >
                 <img src={PHOTO_URL} alt="Пара" className="w-full h-full object-cover" />
               </div>
               <div
                 className="absolute -bottom-6 -left-6 w-32 h-32 rounded-2xl flex flex-col items-center justify-center"
-                style={{ background: "#111111", boxShadow: "0 12px 40px rgba(17,17,17,0.25)" }}
+                style={{ background: "linear-gradient(135deg, var(--c-coral), var(--c-gold))", boxShadow: "0 12px 40px rgba(230,90,60,0.4)" }}
               >
                 <span className="font-cormorant text-4xl font-bold text-white">14</span>
                 <span className="font-montserrat text-xs text-white uppercase tracking-wider">Августа</span>
@@ -59,7 +59,7 @@ export default function WeddingContent() {
           <div className="relative">
             <div
               className="absolute left-[50%] top-0 bottom-0 w-px hidden md:block"
-              style={{ background: "linear-gradient(to bottom, transparent, #111111, transparent)", opacity: 0.2 }}
+              style={{ background: "linear-gradient(to bottom, transparent, var(--c-gold), transparent)", opacity: 0.4 }}
             />
             <div className="space-y-8">
               {PROGRAM.map((item, i) => (
@@ -67,7 +67,7 @@ export default function WeddingContent() {
                   <div className={`flex-1 ${i % 2 === 0 ? "md:text-right" : "md:text-left"}`}>
                     <div
                       className="inline-block px-6 py-5 rounded-2xl transition-transform duration-300 hover:scale-105"
-                      style={{ background: "var(--c-card)", border: "1px solid rgba(17,17,17,0.12)", boxShadow: "0 8px 32px rgba(17,17,17,0.06)" }}
+                      style={{ background: "var(--c-card)", border: "1px solid rgba(184,131,42,0.2)", boxShadow: "0 8px 32px rgba(44,24,16,0.08)" }}
                     >
                       <p className="font-montserrat text-xs uppercase tracking-widest mb-1" style={{ color: "var(--c-coral)" }}>{item.time}</p>
                       <h3 className="font-cormorant text-2xl mb-1" style={{ color: "var(--c-text)" }}>{item.title}</h3>
@@ -77,7 +77,7 @@ export default function WeddingContent() {
                   <div className="relative z-10 flex-shrink-0">
                     <div
                       className="w-14 h-14 rounded-full flex items-center justify-center"
-                      style={{ background: "#111111", boxShadow: "0 0 0 6px rgba(17,17,17,0.08)" }}
+                      style={{ background: "linear-gradient(135deg, var(--c-coral), var(--c-gold))", boxShadow: "0 0 0 6px rgba(230,170,80,0.1)" }}
                     >
                       <Icon name={item.icon} fallback="Star" size={22} style={{ color: "#fff" }} />
                     </div>
@@ -102,11 +102,11 @@ export default function WeddingContent() {
             <h2 className="font-cormorant italic text-5xl md:text-6xl" style={{ color: "var(--c-text)" }}>Локация</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8 items-start">
-            <div className="p-8 rounded-3xl" style={{ background: "var(--c-card)", border: "1px solid rgba(17,17,17,0.1)" }}>
+            <div className="p-8 rounded-3xl" style={{ background: "var(--c-card)", border: "1px solid rgba(230,170,80,0.15)" }}>
               <div className="flex items-start gap-4 mb-6">
                 <div
                   className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
-                  style={{ background: "#111111" }}
+                  style={{ background: "linear-gradient(135deg, var(--c-coral), var(--c-gold))" }}
                 >
                   <Icon name="MapPin" size={22} style={{ color: "#fff" }} />
                 </div>
@@ -134,7 +134,7 @@ export default function WeddingContent() {
                 target="_blank"
                 rel="noopener"
                 className="flex items-center justify-center gap-2 py-3 px-6 rounded-xl font-montserrat text-sm uppercase tracking-wider transition-all duration-300 hover:scale-105"
-                style={{ background: "#111111", color: "#fff", textDecoration: "none" }}
+                style={{ background: "linear-gradient(135deg, var(--c-coral), var(--c-gold))", color: "#fff", textDecoration: "none" }}
               >
                 <Icon name="Navigation" size={16} />
                 Открыть на карте
@@ -142,7 +142,7 @@ export default function WeddingContent() {
             </div>
             <div
               className="rounded-3xl overflow-hidden flex items-center justify-center"
-              style={{ background: "var(--c-card)", border: "1px solid rgba(17,17,17,0.1)", minHeight: 280 }}
+              style={{ background: "var(--c-card)", border: "1px solid rgba(230,170,80,0.15)", minHeight: 280 }}
             >
               <div className="text-center p-8">
                 <Icon name="Map" size={48} style={{ color: "var(--c-gold)", opacity: 0.4 }} />
@@ -164,7 +164,7 @@ export default function WeddingContent() {
             </p>
             <h2 className="font-cormorant italic text-5xl md:text-6xl" style={{ color: "var(--c-text)" }}>Дресс-код</h2>
           </div>
-          <div className="p-8 md:p-12 rounded-3xl" style={{ background: "var(--c-card)", border: "1px solid rgba(17,17,17,0.1)" }}>
+          <div className="p-8 md:p-12 rounded-3xl" style={{ background: "var(--c-card)", border: "1px solid rgba(230,170,80,0.15)" }}>
             <p className="font-montserrat text-sm leading-loose text-center mb-10" style={{ color: "var(--c-muted)" }}>
               Мы будем рады видеть гостей в элегантных нарядах тёплой цветовой гаммы.<br />
               Пожалуйста, избегайте белого и чёрного цветов.
@@ -183,14 +183,14 @@ export default function WeddingContent() {
             <div className="grid md:grid-cols-2 gap-6">
               <div
                 className="flex items-center gap-4 p-4 rounded-2xl"
-                style={{ background: "rgba(17,17,17,0.04)", border: "1px solid rgba(17,17,17,0.1)" }}
+                style={{ background: "rgba(230,90,60,0.08)", border: "1px solid rgba(230,90,60,0.15)" }}
               >
                 <Icon name="CheckCircle" size={20} style={{ color: "var(--c-coral)" }} />
                 <span className="font-montserrat text-sm" style={{ color: "var(--c-muted)" }}>Вечерние платья и костюмы приветствуются</span>
               </div>
               <div
                 className="flex items-center gap-4 p-4 rounded-2xl"
-                style={{ background: "rgba(17,17,17,0.04)", border: "1px solid rgba(17,17,17,0.1)" }}
+                style={{ background: "rgba(230,90,60,0.08)", border: "1px solid rgba(230,90,60,0.15)" }}
               >
                 <Icon name="XCircle" size={20} style={{ color: "var(--c-coral)" }} />
                 <span className="font-montserrat text-sm" style={{ color: "var(--c-muted)" }}>Белый и чёрный цвета просим не выбирать</span>
@@ -223,11 +223,11 @@ export default function WeddingContent() {
                 key={i}
                 href={c.href}
                 className="block p-8 rounded-2xl transition-all duration-300 hover:scale-105"
-                style={{ background: "var(--c-card)", border: "1px solid rgba(17,17,17,0.1)", textDecoration: "none" }}
+                style={{ background: "var(--c-card)", border: "1px solid rgba(230,170,80,0.15)", textDecoration: "none" }}
               >
                 <div
                   className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4"
-                  style={{ background: "#111111" }}
+                  style={{ background: "linear-gradient(135deg, var(--c-coral), var(--c-gold))" }}
                 >
                   <Icon name={c.icon} fallback="Phone" size={22} style={{ color: "#fff" }} />
                 </div>
@@ -240,10 +240,10 @@ export default function WeddingContent() {
       </section>
 
       {/* FOOTER */}
-      <footer className="py-12 text-center" style={{ borderTop: "1px solid rgba(17,17,17,0.1)" }}>
+      <footer className="py-12 text-center" style={{ borderTop: "1px solid rgba(230,170,80,0.1)" }}>
         <p className="font-cormorant italic text-3xl mb-2" style={{ color: "var(--c-gold)" }}>Дмитрий & Елена</p>
         <p className="font-montserrat text-xs tracking-widest uppercase" style={{ color: "var(--c-muted)" }}>14 · 08 · 2026</p>
-        <p className="font-montserrat text-xs mt-4" style={{ color: "rgba(17,17,17,0.2)" }}>С любовью ❤</p>
+        <p className="font-montserrat text-xs mt-4" style={{ color: "rgba(44,24,16,0.2)" }}>С любовью ❤</p>
       </footer>
     </>
   );

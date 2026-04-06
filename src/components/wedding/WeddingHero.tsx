@@ -22,7 +22,7 @@ export default function WeddingHero() {
         />
         <div
           className="absolute inset-0"
-          style={{ background: "linear-gradient(to bottom, rgba(237,232,223,0.15) 0%, rgba(237,232,223,0.45) 60%, rgba(237,232,223,1) 100%)" }}
+          style={{ background: "linear-gradient(to bottom, rgba(253,248,243,0.15) 0%, rgba(253,248,243,0.45) 60%, rgba(253,248,243,1) 100%)" }}
         />
       </div>
 
@@ -32,7 +32,7 @@ export default function WeddingHero() {
           className="absolute rounded-full pointer-events-none"
           style={{
             width: `${3 + (i % 3)}px`, height: `${3 + (i % 3)}px`,
-            background: `rgba(17,17,17,${0.1 + (i % 5) * 0.06})`,
+            background: `rgba(230,170,80,${0.2 + (i % 5) * 0.1})`,
             left: `${(i * 11) % 100}%`, top: `${(i * 17) % 100}%`,
             animation: `float ${3 + (i % 3)}s ease-in-out infinite`,
             animationDelay: `${(i % 4) * 0.7}s`,
@@ -73,7 +73,7 @@ export default function WeddingHero() {
         <button
           onClick={() => scrollTo("rsvp")}
           className="mt-12 px-10 py-4 font-montserrat text-sm uppercase tracking-widest transition-all duration-300 hover:scale-105"
-          style={{ background: "#111111", color: "#fff", borderRadius: 2, boxShadow: "0 8px 32px rgba(17,17,17,0.25)" }}
+          style={{ background: "linear-gradient(135deg, var(--c-coral), var(--c-gold))", color: "#fff", borderRadius: 2, boxShadow: "0 8px 32px rgba(230,90,60,0.4)" }}
         >
           Подтвердить участие
         </button>

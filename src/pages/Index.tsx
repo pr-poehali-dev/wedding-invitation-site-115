@@ -11,12 +11,12 @@ export default function Index() {
 
       <style>{`
         :root {
-          --c-bg: #EDE8DF;
+          --c-bg: #FDF8F3;
           --c-card: #FFFFFF;
-          --c-text: #111111;
-          --c-muted: rgba(17,17,17,0.45);
-          --c-gold: #111111;
-          --c-coral: #111111;
+          --c-text: #2C1810;
+          --c-muted: rgba(44,24,16,0.5);
+          --c-gold: #B8832A;
+          --c-coral: #C94F30;
         }
         .font-cormorant { font-family: 'Cormorant Garamond', serif; }
         .font-montserrat { font-family: 'Montserrat', sans-serif; }
@@ -30,10 +30,10 @@ export default function Index() {
         }
         .animate-fade-in { animation: fade-in 1.2s ease both; }
         html { scroll-behavior: smooth; }
-        input::placeholder, textarea::placeholder { color: rgba(17,17,17,0.3); }
+        input::placeholder, textarea::placeholder { color: rgba(44,24,16,0.3); }
         ::-webkit-scrollbar { width: 4px; }
-        ::-webkit-scrollbar-track { background: #EDE8DF; }
-        ::-webkit-scrollbar-thumb { background: #111111; border-radius: 2px; }
+        ::-webkit-scrollbar-track { background: #FDF8F3; }
+        ::-webkit-scrollbar-thumb { background: var(--c-gold); border-radius: 2px; }
       `}</style>
     </div>
   );
