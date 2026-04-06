@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 export const WEDDING_DATE = new Date("2026-08-14T14:00:00");
 
 export const PHOTO_URL =
-  "https://cdn.poehali.dev/projects/0a84e299-6d88-4d4e-87c5-8107f3b0b207/files/8d07f19d-a757-41e0-822d-f5e99f1ed8c5.jpg";
+  "https://cdn.poehali.dev/projects/0a84e299-6d88-4d4e-87c5-8107f3b0b207/bucket/3a72880c-b984-4af7-9194-c3f554356509.jpg";
 
 export const PROGRAM = [
   { time: "10:00", icon: "Heart", title: "Церемония", desc: "Торжественная регистрация брака" },
