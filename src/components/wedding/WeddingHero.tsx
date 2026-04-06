@@ -52,13 +52,7 @@ export default function WeddingHero() {
           <span style={{ color: "var(--c-gold)" }}>&</span><br />
           Елена
         </h1>
-        <div className="flex items-center justify-center gap-4 my-8">
-          <div style={{ height: 1, width: 60, background: "linear-gradient(to right, transparent, var(--c-gold))" }} />
-          <span className="font-montserrat text-sm tracking-[0.3em] uppercase" style={{ color: "var(--c-gold)" }}>
-            14 августа 2026
-          </span>
-          <div style={{ height: 1, width: 60, background: "linear-gradient(to left, transparent, var(--c-gold))" }} />
-        </div>
+
 
         <div className="flex items-center justify-center gap-4 md:gap-6 mt-10">
           <CountdownBlock value={countdown.days} label="Дней" />
