@@ -2,13 +2,26 @@ import { useState } from "react";
 import Icon from "@/components/ui/icon";
 import { Section } from "./shared";
 
+const RSVP_URL = "https://functions.poehali.dev/37b49f9e-aea0-41a5-8af4-e1bdedc343eb";
+
 export default function WeddingRsvp() {
   const [form, setForm] = useState({ name: "", attending: "", drink: "", wish: "" });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    try {
+      await fetch(RSVP_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      setSubmitted(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -130,10 +143,11 @@ export default function WeddingRsvp() {
 
             <button
               type="submit"
-              className="w-full py-5 font-montserrat text-sm uppercase tracking-widest transition-all duration-300 hover:scale-105"
+              disabled={loading}
+              className="w-full py-5 font-montserrat text-sm uppercase tracking-widest transition-all duration-300 hover:scale-105 disabled:opacity-60 disabled:cursor-not-allowed"
               style={{ background: "linear-gradient(135deg, var(--c-coral), var(--c-gold))", color: "#fff", borderRadius: 12, boxShadow: "0 8px 32px rgba(230,90,60,0.35)" }}
             >
-              Отправить анкету
+              {loading ? "Отправляем..." : "Отправить анкету"}
             </button>
           </form>
         )}

@@ -1,0 +1,13 @@
+{
+  "tests": [
+    {
+      "name": "Submit RSVP",
+      "method": "POST",
+      "path": "/",
+      "body": {"name": "Иванов Иван", "attending": "Да, обязательно (Банкет)", "drink": "Шампанское", "wish": "Совет да любовь!"},
+      "expectedStatus": 200,
+      "expectedBody": {"ok": true},
+      "bodyMatcher": "partial"
+    }
+  ]
+}
