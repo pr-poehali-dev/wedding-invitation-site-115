@@ -84,7 +84,7 @@ export function CountdownBlock({ value, label }: { value: number; label: string 
     <div className="flex flex-col items-center gap-1">
       <div
         className="w-20 h-20 md:w-24 md:h-24 rounded-2xl flex items-center justify-center"
-        style={{ background: "linear-gradient(135deg, var(--c-coral), var(--c-gold))", boxShadow: "0 8px 32px rgba(230,90,60,0.35)" }}
+        style={{ background: "#b8832a", boxShadow: "0 8px 32px rgba(184,131,42,0.35)" }}
       >
         <span className="font-cormorant text-white text-4xl md:text-5xl font-bold leading-none">
           {String(value).padStart(2, "0")}
