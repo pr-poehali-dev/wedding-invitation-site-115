@@ -13,11 +13,11 @@ export const PROGRAM = [
 ];
 
 export const DRESS_CODES = [
-  { color: "#E8D5A3", name: "Шампань" },
-  { color: "#F4A261", name: "Коралл" },
-  { color: "#C8A96E", name: "Золото" },
-  { color: "#8D6E63", name: "Терракот" },
-  { color: "#4A4A4A", name: "Антрацит" },
+  { color: "#F8C8D0", name: "Нежно розовый" },
+  { color: "#E8D5B7", name: "Бежевый" },
+  { color: "#8B6347", name: "Коричневый" },
+  { color: "#7A8C5E", name: "Оливковый" },
+  { color: "#FAF0A0", name: "Нежно жёлтый" },
 ];
 
 export const NAV_LINKS = [
