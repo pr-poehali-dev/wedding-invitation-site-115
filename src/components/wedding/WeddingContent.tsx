@@ -101,7 +101,7 @@ export default function WeddingContent() {
             </p>
             <h2 className="font-cormorant italic text-5xl md:text-6xl" style={{ color: "var(--c-text)" }}>Локация</h2>
           </div>
-          <div className="grid md:grid-cols-2 gap-8 items-start">
+          <div className="grid md:grid-cols-2 gap-8 items-stretch">
             <div className="p-8 rounded-3xl" style={{ background: "var(--c-card)", border: "1px solid rgba(230,170,80,0.15)" }}>
               <div className="flex items-start gap-4 mb-6">
                 <div
