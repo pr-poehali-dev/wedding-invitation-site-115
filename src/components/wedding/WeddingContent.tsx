@@ -111,6 +111,36 @@ export default function WeddingContent() {
                   <Icon name="MapPin" size={22} style={{ color: "#fff" }} />
                 </div>
                 <div>
+                  <h3 className="font-cormorant text-2xl mb-1" style={{ color: "var(--c-text)" }}>ЗАГС Дзержинского района</h3>
+                  <p className="font-montserrat text-sm" style={{ color: "var(--c-muted)" }}>г. Пермь, ул. Ленина, 98</p>
+                </div>
+              </div>
+              <div className="space-y-4 mb-6">
+                <div className="flex items-center gap-3">
+                  <Icon name="Clock" size={16} style={{ color: "var(--c-gold)" }} />
+                  <span className="font-montserrat text-sm" style={{ color: "var(--c-muted)" }}>Начало в 10:00</span>
+                </div>
+              </div>
+              <a
+                href="https://yandex.ru/maps/org/zags_dzerzhinskogo_rayona/1734593233/?ll=56.200083%2C58.004724&z=16.71"
+                target="_blank"
+                rel="noopener"
+                className="flex items-center justify-center gap-2 py-3 px-6 rounded-xl font-montserrat text-sm uppercase tracking-wider transition-all duration-300 hover:scale-105"
+                style={{ background: "linear-gradient(135deg, var(--c-coral), var(--c-gold))", color: "#fff", textDecoration: "none" }}
+              >
+                <Icon name="Navigation" size={16} />
+                Открыть на карте
+              </a>
+            </div>
+            <div className="p-8 rounded-3xl" style={{ background: "var(--c-card)", border: "1px solid rgba(230,170,80,0.15)" }}>
+              <div className="flex items-start gap-4 mb-6">
+                <div
+                  className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
+                  style={{ background: "linear-gradient(135deg, var(--c-coral), var(--c-gold))" }}
+                >
+                  <Icon name="MapPin" size={22} style={{ color: "#fff" }} />
+                </div>
+                <div>
                   <h3 className="font-cormorant text-2xl mb-1" style={{ color: "var(--c-text)" }}>База отдыха «Зеленино»</h3>
                   <p className="font-montserrat text-xs mb-0.5" style={{ color: "var(--c-gold)" }}>Беседка «Белый лофт»</p>
                   <p className="font-montserrat text-sm" style={{ color: "var(--c-muted)" }}>г. Пермь, Апрельская ул., 51</p>
