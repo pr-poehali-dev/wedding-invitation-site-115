@@ -122,7 +122,7 @@ export default function WeddingContent() {
                 </div>
                 <div className="flex items-center gap-3">
                   <Icon name="Car" size={16} style={{ color: "var(--c-gold)" }} />
-                  <span className="font-montserrat text-sm" style={{ color: "var(--c-muted)" }}>Парковка платная</span>
+                  <span className="font-montserrat text-sm" style={{ color: "var(--c-muted)" }}>Парковка для гостей — платная</span>
                 </div>
               </div>
               <a
