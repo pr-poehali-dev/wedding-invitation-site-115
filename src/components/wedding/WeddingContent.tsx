@@ -236,7 +236,7 @@ export default function WeddingContent() {
             Связь с нами
           </p>
           <h2 className="font-cormorant italic text-5xl md:text-6xl mb-12" style={{ color: "var(--c-text)" }}>Контакты</h2>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="flex flex-wrap justify-center gap-6">
             {[
               { icon: "Phone", title: "Дмитрий", value: "+7 (951) 943-10-17", href: "tel:+79519431017" },
               { icon: "Phone", title: "Елена", value: "+7 (952) 338-28-08", href: "tel:+79523382808" },
@@ -245,7 +245,7 @@ export default function WeddingContent() {
               <a
                 key={i}
                 href={c.href}
-                className="block p-8 rounded-2xl transition-all duration-300 hover:scale-105"
+                className="block p-8 rounded-2xl transition-all duration-300 hover:scale-105 w-64"
                 style={{ background: "var(--c-card)", border: "1px solid rgba(230,170,80,0.15)", textDecoration: "none" }}
               >
                 <div
