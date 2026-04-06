@@ -6,7 +6,7 @@ export const PHOTO_URL =
   "https://cdn.poehali.dev/projects/0a84e299-6d88-4d4e-87c5-8107f3b0b207/files/8d07f19d-a757-41e0-822d-f5e99f1ed8c5.jpg";
 
 export const PROGRAM = [
-  { time: "14:00", icon: "Heart", title: "Церемония", desc: "Торжественная регистрация брака" },
+  { time: "10:00", icon: "Heart", title: "Церемония", desc: "Торжественная регистрация брака" },
   { time: "15:30", icon: "Camera", title: "Фотосессия", desc: "Прогулка и памятные снимки" },
   { time: "17:00", icon: "UtensilsCrossed", title: "Банкет", desc: "Праздничный ужин и тосты" },
   { time: "19:00", icon: "Music", title: "Танцы", desc: "Живая музыка и дискотека" },
