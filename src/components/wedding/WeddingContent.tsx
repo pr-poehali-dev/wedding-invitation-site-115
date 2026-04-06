@@ -120,6 +120,10 @@ export default function WeddingContent() {
                   <Icon name="Clock" size={16} style={{ color: "var(--c-gold)" }} />
                   <span className="font-montserrat text-sm" style={{ color: "var(--c-muted)" }}>Начало в 10:00</span>
                 </div>
+                <div className="flex items-center gap-3">
+                  <Icon name="Car" size={16} style={{ color: "var(--c-gold)" }} />
+                  <span className="font-montserrat text-sm" style={{ color: "var(--c-muted)" }}>Парковка платная</span>
+                </div>
               </div>
               <a
                 href="https://yandex.ru/maps/org/zags_dzerzhinskogo_rayona/1734593233/?ll=56.200083%2C58.004724&z=16.71"
