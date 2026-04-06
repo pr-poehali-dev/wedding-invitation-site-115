@@ -70,8 +70,8 @@ export default function WeddingRsvp() {
               <label className="font-montserrat text-xs uppercase tracking-widest block" style={{ color: "var(--c-gold)" }}>
                 Вы придёте? *
               </label>
-              <div className="grid grid-cols-2 gap-3">
-                {["Да, обязательно!", "К сожалению, нет"].map(opt => (
+              <div className="grid grid-cols-1 gap-3">
+                {["Да, обязательно (ЗАГС и Банкет)", "Да, обязательно (Банкет)", "К сожалению, нет"].map(opt => (
                   <button
                     key={opt}
                     type="button"
